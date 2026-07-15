@@ -8,7 +8,7 @@
 //   const [allHoldings, setAllHoldings] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://localhost:3002/allHoldings").then((res) => {
+//     axios.get("http:localhost:3002///allHoldings").then((res) => {
 //       // console.log(res.data);
 //       setAllHoldings(res.data);
 //     });
@@ -129,7 +129,7 @@ const Holdings = () => {
   useEffect(() => {
     const fetchHoldings = async () => {
       try {
-        const res = await axios.get("http://localhost:3002/allHoldings");
+const res = await axios.get("https://stock-trading-backend-tqce.onrender.com/allHoldings");
         setAllHoldings(res.data || []);
       } catch (err) {
         console.error("Error fetching holdings:", err);
